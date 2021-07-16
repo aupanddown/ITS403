@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Galleries - Virtual 360 Images and Videos online Gallery</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/its403-360.appspot.com/o/asset%2Ffav.ico?alt=media&token=22c15a30-bd97-40aa-91b5-6f758bf4c682" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/its403-360.appspot.com/o/asset%2Ffav.ico?alt=media&token=22c15a30-bd97-40aa-91b5-6f758bf4c682" type="image/x-icon"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+</head>
+<body>
+    <!-- Get URL Param -->
+    <!-- End of get URL Param -->
+
+    <!-- Start 360 -->
+    <script src="../node_modules/three/build/three.min.js"></script>
+    <script src="../build/panolens.js"></script>
+    <div id="panolens-separate-container"></div>
+    <script>
+        const empty = new PANOLENS.EmptyPanorama();
+        const image = new PANOLENS.ImagePanorama( 'https://firebasestorage.googleapis.com/v0/b/its403-360.appspot.com/o/home.jpg?alt=media&token=e3d90ede-dc93-45cc-8497-b442e0e3dbef' );
+        const infospot = new PANOLENS.Infospot( 350, PANOLENS.DataImage.Info );
+        infospot.position.set( -1294.60, 181.52, -4298.10 );
+        infospot.addHoverText( 'Thammasat University' ); 
+        const widget = new PANOLENS.Widget();
+        const reticle = new PANOLENS.Reticle();
+        const camera = new PANOLENS.CameraPanorama({video: {facingMode: 'user'} });
+        const viewer = new PANOLENS.Viewer({output: 'console'});
+        console.log(empty, image, infospot, widget, reticle, viewer);
+        image.add( infospot );
+        viewer.add( image );
+    </script>
+    <!-- End of 360 -->
+</body>
+</html>

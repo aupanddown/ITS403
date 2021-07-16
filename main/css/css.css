@@ -1,0 +1,94 @@
+body {
+    background-color: #0c1d31;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  input{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+  
+  button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+  
+  .main-div, .loggedin-div {
+    width: 50%;
+    margin: 0px auto;
+    padding: 20px;
+    display: none;
+  }
+  
+  .main-div input {
+    display: inline-block;
+    border-radius: 8px;
+    padding: 5px;
+    outline: none;
+    width: 45%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    border: none;
+    border-bottom: 2px solid #ffd11a;
+    background-color: rgba(0,0,0,0.1);
+    color: #fff;
+  }
+  
+  .main-div input:focus {
+    border: 3px solid #c79f01;
+  }
+  
+  .main-div button, .loggedin-div button {
+    background: #ffd11a;
+    color: #0c1d31;
+    border: 1px solid #5d8ffc;
+    border-radius: 20px;
+    padding: 5px;
+    display: inline-block;
+    width: 45%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    font-size:small;
+  }
+  
+  .main-div button:hover, .loggedin-div button:hover {
+    background: #fff;
+    color: #5d8ffc;
+    border: 1px solid #5d8ffc;
+    cursor: pointer;
+  }
+  
+  .my_diviframe {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin:0 auto;
+    overflow:hidden;
+    width: 90%;
+    height: 80%;
+  }
+  
+  .mylogo{
+    padding-left: 20px;
+    padding-top: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+  }
+  
+  .rowhome {
+    width: 80%;
+    border: 3px solid #ffd11a;
+    background-color: #fff;
+    color: #0c1d31;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px;
+  }

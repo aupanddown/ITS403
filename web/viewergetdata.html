@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Galleries - Virtual 360 Images and Videos online Gallery</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/its403-360.appspot.com/o/asset%2Ffav.ico?alt=media&token=22c15a30-bd97-40aa-91b5-6f758bf4c682" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/its403-360.appspot.com/o/asset%2Ffav.ico?alt=media&token=22c15a30-bd97-40aa-91b5-6f758bf4c682" type="image/x-icon"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        const firebaseConfig = {
+        apiKey: "AIzaSyDdVFT-5WRywXvr77DvkQRRks56vCEVXNU",
+        authDomain: "its403-360.firebaseapp.com",
+        databaseURL: "https://its403-360-default-rtdb.firebaseio.com",
+        projectId: "its403-360",
+        storageBucket: "its403-360.appspot.com",
+        messagingSenderId: "1000765488582",
+        appId: "1:1000765488582:web:e9b08500af03f53f2bc6c7"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="viewer.js"></script>
+    <script id="imglist">
+        window.onload = fn1();
+    </script>
+</body>
+</html>
